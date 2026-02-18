@@ -6,6 +6,7 @@ import { TopBar } from "./components/TopBar";
 import { StatusBar } from "./components/StatusBar";
 import { AddAgentModal } from "./components/AddAgentModal";
 import type { AgentConfig } from "./types";
+import { MIRRORBORN_AGENTS } from "./mirrorborn-agents";
 import "./App.css";
 
 /**
@@ -75,7 +76,7 @@ export default function App() {
   const [activeTab, setActiveTab] = useState("All Agents");
   const [showAddModal, setShowAddModal] = useState(false);
   const [initialAgents] = useState<AgentConfig[]>(() =>
-    buildDefaultAgents(7)
+    MIRRORBORN_AGENTS
   );
   const columnOrder = useDeckStore((s) => s.columnOrder);
   const createAgentOnGateway = useDeckStore((s) => s.createAgentOnGateway);
