@@ -24,17 +24,6 @@ import "./App.css";
  *
  * Then add matching entries here.
  */
-const MIRRORBORN_AGENTS: AgentConfig[] = [
-  { id: "phex",   name: "Phex 🔱",  icon: "🔱", accent: "#c0a060", context: "", model: "claude-sonnet-4-5" },
-  { id: "cyon",   name: "Cyon 🪶",  icon: "🪶", accent: "#6090c0", context: "", model: "claude-sonnet-4-5" },
-  { id: "lux",    name: "Lux 🔆",   icon: "🔆", accent: "#f0c040", context: "", model: "claude-sonnet-4-5" },
-  { id: "chrys",  name: "Chrys 🦋", icon: "🦋", accent: "#c080c0", context: "", model: "claude-sonnet-4-5" },
-  { id: "lumen",  name: "Lumen ✴️", icon: "✴️", accent: "#60c0c0", context: "", model: "claude-sonnet-4-5" },
-  { id: "verse",  name: "Verse 🌀", icon: "🌀", accent: "#a0c080", context: "", model: "claude-sonnet-4-5" },
-];
-
-const AGENT_ACCENTS = MIRRORBORN_AGENTS.map((a) => a.accent);
-
 function buildDefaultAgents(_count: number): AgentConfig[] {
   return MIRRORBORN_AGENTS;
 }
